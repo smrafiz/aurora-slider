@@ -1,0 +1,28 @@
+{
+	"name": "aurora-themes/aurora-slider",
+	"description": "All in one WordPress Slider",
+	"type": "project",
+	"require": {
+		"htmlburger/carbon-fields": "^3.1"
+	},
+	"license": "GPL",
+	"authors": [
+		{
+			"name": "S.M. Rafiz",
+			"email": "s.m.rafiz@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"autoload": {
+		"files": [
+			"./vendor/custom-carbon-fields/carbon-field-switch/field.php",
+			"./vendor/custom-carbon-fields/carbon-field-range/field.php",
+			"./vendor/htmlburger/carbon-fields/core/functions.php"
+		],
+		"psr-4": {
+			"AuroraSlider\\": "./includes",
+			"Carbon_Field_Switch\\": "./vendor/custom-carbon-fields/carbon-field-switch/core/",
+			"Carbon_Field_Range\\": "./vendor/custom-carbon-fields/carbon-field-range/core/"
+		}
+	}
+}
